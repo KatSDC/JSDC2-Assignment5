@@ -1,14 +1,18 @@
 body {
 	text-align: center;
+	background-color: #d9f0ff;
 }
 
 h1 {
 	font-family: 'Signika', sans-serif;
+	font-size: 70px;
+	color: #0069bf;
 }
 
 #number-container {
 	display: inline-block;
-	border: 1px solid black;
+	background-color: white;
+	border: 1px solid white;
 	border-radius: 10px;
 	padding: 15px 30px;
 }
