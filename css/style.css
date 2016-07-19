@@ -17,7 +17,7 @@ h1 {
     background-color: #ccc;
     border-radius:6px;
     color: #fff;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-decoration: none;
     border:none;
@@ -32,7 +32,7 @@ h1 {
     background-color: #ccc;
     border-radius:6px;
     color: #fff;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-decoration: none;
     border:none;
@@ -47,7 +47,7 @@ h1 {
     background-color: #ccc;
     border-radius:6px;
     color: #fff;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-decoration: none;
     border:none;
