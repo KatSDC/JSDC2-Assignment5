@@ -1,45 +1,46 @@
 //Model
 
-var counter = 0;
+var count = 0;
 
 //View
 
-function renderCounter() {
-	if (counter > 99) {
-		$('h3').css('color', 'red');
-	} else if (counter < 0) {
-		$('h3').css('color', 'blue');
-	} else {
-		$('h3').css('color', 'black');
-	}
-	$('#counter').html(counter);
+function renderCount() {
+	var source = $('#count-template').html();
+	var template = Handlebars.compile(source);
+
+	var countHtml = template({
+		count: count,
+		high: count > 100,
+		low: count < 0
+	});
+	$('#count-container').html(countHtml);
 }
 
 //Model
 function setup() {
-	renderCounter();
+	renderCount();
 
-	$('#subtract').on('click', subtractNumber);
-	$('#reset').on('click', resetCounter);
-	$('#add').on('click', addNumber);
+	$('#subtract').on('click', subtract);
+	$('#reset').on('click', resetCount);
+	$('#add').on('click', add);
 }
 
-function subtractNumber() {
-	counter -= 1;
+function subtract() {
+	count--;
 
-	renderCounter();
+	renderCount();
 }
 
-function resetCounter() {
-	counter = 0;
+function resetCount() {
+	count = 0;
 
-	renderCounter();
+	renderCount();
 }
 
-function addNumber() {
-	counter += 1;
+function add() {
+	count++;
 
-	renderCounter();
+	renderCount();
 }
 
 $(document).ready(setup);

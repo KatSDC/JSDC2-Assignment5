@@ -9,22 +9,41 @@ h1 {
 	color: #0069bf;
 }
 
-#number-container {
+.high {
+	color: red;
+}
+
+.low {
+	color: blue;
+}
+
+#count-container {
 	display: inline-block;
 	background-color: white;
-	border: 1px solid white;
+	height: 100px;
+    width: 100px;
 	border-radius: 10px;
-	padding: 15px 30px;
+	font-size: 60px;
+    font-weight: bold;
+}
+
+.centered {
+    vertical-align: middle;
+    display: inline-block;
 }
 
 #subtract {
     background-color: #ccc;
+    height: 50px;
+    width: 50px;
     border-radius:6px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-decoration: none;
-    border:none;
+    border: none;
+    padding: 0px 10px;
+    margin: 0 10px;
 }
 
 #subtract:hover {
@@ -34,12 +53,16 @@ h1 {
 
 #add {
     background-color: #ccc;
+    height: 50px;
+    width: 50px;
     border-radius:6px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-decoration: none;
-    border:none;
+    border: none;
+    padding: 0px 10px;
+    margin: 0 10px;
 }
 
 #add:hover {
