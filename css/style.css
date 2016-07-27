@@ -5,7 +5,9 @@ body {
 
 h1 {
 	font-family: 'Signika', sans-serif;
-	font-size: 70px;
+	font-size: 4.5em;
+    font-weight: 1000;
+    letter-spacing: .1em;
 	color: #0069bf;
 }
 
@@ -23,7 +25,7 @@ h1 {
 	height: 100px;
     width: 100px;
 	border-radius: 10px;
-	font-size: 60px;
+	font-size: 4.5em;
     font-weight: bold;
 }
 
@@ -32,18 +34,22 @@ h1 {
     display: inline-block;
 }
 
-#subtract {
+button {
     background-color: #ccc;
-    height: 50px;
-    width: 50px;
     border-radius:6px;
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
     border: none;
     padding: 0px 10px;
     margin: 0 10px;
+}
+
+#subtract {
+    height: 50px;
+    width: 50px;
 }
 
 #subtract:hover {
@@ -52,17 +58,8 @@ h1 {
 }
 
 #add {
-    background-color: #ccc;
     height: 50px;
     width: 50px;
-    border-radius:6px;
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    border: none;
-    padding: 0px 10px;
-    margin: 0 10px;
 }
 
 #add:hover {
@@ -71,13 +68,7 @@ h1 {
 }
 
 #reset {
-    background-color: #ccc;
-    border-radius:6px;
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    text-decoration: none;
-    border:none;
+    font-size: 30px;
 }
 
 #reset:hover {
